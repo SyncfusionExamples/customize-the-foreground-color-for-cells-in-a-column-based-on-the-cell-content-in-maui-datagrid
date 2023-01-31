@@ -27,7 +27,7 @@ namespace DataGridMAUI
         private int _rating;
         //public int EmployeeID { get; set; }
         public string Name { get; set; }
-        public long IDNumber { get; set; }
+        //public long IDNumber { get; set; }
         
         public string Title { get; set; }
         public int ContactID { get; set; }
