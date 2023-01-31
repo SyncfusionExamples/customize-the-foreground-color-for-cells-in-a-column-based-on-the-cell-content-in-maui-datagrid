@@ -117,7 +117,7 @@ namespace DataGridMAUI
                 {
                     //EmployeeID = 1000 + i,
                     Name = name,
-                    IDNumber = r.Next(14417807, 112457891),
+                    //IDNumber = r.Next(14417807, 112457891),
                     ContactID = r.Next(1001, 2000),
                     ManagerID = r.Next(30, 60),
                     LoginID = loginID[name],

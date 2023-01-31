@@ -15,18 +15,17 @@
             <local:ColorConverter x:Key="result"/>
         </ResourceDictionary>
     </ContentPage.Resources>
-    <syncfusion:SfDataGrid x:Name="dataGrid" 
-                           ItemsSource="{Binding Employees}" 
+    <syncfusion:SfDataGrid ItemsSource="{Binding Employees}" 
                            DefaultColumnWidth="110">
         <syncfusion:SfDataGrid.Columns>
-            <syncfusion:DataGridNumericColumn MappingName="ManagerID">
-                <syncfusion:DataGridNumericColumn.CellStyle>
-                    <Style TargetType="syncfusion:DataGridCell">
-                        <Setter Property="TextColor"
-                                Value="{Binding ManagerID,Converter={StaticResource result}}" />
-                    </Style>
-                </syncfusion:DataGridNumericColumn.CellStyle>
-            </syncfusion:DataGridNumericColumn>
+<syncfusion:DataGridNumericColumn MappingName="ManagerID" HeaderText="ID" Format="d">
+    <syncfusion:DataGridNumericColumn.CellStyle>
+        <Style TargetType="syncfusion:DataGridCell">
+            <Setter Property="TextColor"
+    Value="{Binding ManagerID,Converter={StaticResource result}}" />
+        </Style>
+    </syncfusion:DataGridNumericColumn.CellStyle>
+</syncfusion:DataGridNumericColumn>
         </syncfusion:SfDataGrid.Columns>
     </syncfusion:SfDataGrid>
 </ContentPage>
